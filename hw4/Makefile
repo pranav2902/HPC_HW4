@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++11 -O3 -march=native -fopenmp
 PROCESSES = 3
 TARGETS = $(basename $(wildcard *.cpp))
 
-int_ring:int_ring.cpp 
+int_ring:int_ring.cpp
         $(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@
 
 pingpong:pingpong.cpp
