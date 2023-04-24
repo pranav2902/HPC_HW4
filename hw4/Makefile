@@ -1,3 +1,4 @@
+PRECURSOR = module load openmpi/gcc/4.0.5
 CXX = mpic++ # or mpicxx
 CXXFLAGS = -std=c++11 -O3 -march=native -fopenmp
 PROCESSES = 3
